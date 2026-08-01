@@ -1,0 +1,45 @@
+{
+  "youtube_accounts": [
+    "YT_英语频道1",
+    "YT_英语频道2",
+    "YT_英语频道3",
+    "YT_德语",
+    "YT_法语",
+    "YT_波兰语",
+    "YT_意大利语",
+    "YT_西班牙语"
+  ],
+  "facebook_accounts": ["FB_英语", "FB_泰语", "FB_印尼语"],
+  "supported_tabular_extensions": [".xlsx", ".xls", ".csv", ".tsv"],
+  "youtube_export_files": ["图表数据", "总计", "表格数据"],
+  "youtube_table_headers": [
+    "内容",
+    "视频标题",
+    "视频发布时间",
+    "时长",
+    "观看次数",
+    "观看时长（小时）",
+    "订阅人数",
+    "估算收入 (USD)",
+    "展示次数",
+    "展示点击率 (%)"
+  ],
+  "facebook_required_metrics": ["互动", "关注次数", "浏览人数", "浏览量", "访问量", "链接点击量"],
+  "facebook_optional_metrics": ["收入"],
+  "rights_sheets": {
+    "YouTube_CID": ["剧集名称", "剧集上线时间", "版权保护完成时间"],
+    "Facebook_RM": ["剧集名称", "剧集上线时间", "版权保护完成时间"]
+  },
+  "distribution_expected_metrics": [
+    "机构",
+    "点击数",
+    "激活用户数",
+    "激活转化率",
+    "付费人数",
+    "付费转化率",
+    "订单数",
+    "付费金额($)"
+  ],
+  "distribution_filter": {"field": "机构", "contains": "自营"},
+  "meta_manual_sheet": "Meta_RM分析"
+}

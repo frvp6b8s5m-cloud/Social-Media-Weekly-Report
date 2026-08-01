@@ -1,0 +1,62 @@
+# Dependencies and package-manager caches
+/node_modules/
+/.npm-cache/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Build, test, and deployment output
+/.next/
+/.vinext/
+/dist/
+/out/
+/coverage/
+/.wrangler/
+/.vercel/
+
+# Local generated artifacts and scratch work
+/outputs/
+/work/
+/.devserver.*.log
+*.log
+
+# Weekly raw business data and generated results stay local.
+# Keep data/周报数据/README.md, data/周报数据/_每周复制模板/, and data/模板/.
+/data/处理结果/
+/data/周报数据/*_周报数据/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editors, OS files, and local Codex state
+/.agents/
+/.codex/
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# TypeScript-generated declarations
+next-env.d.ts
+*.tsbuildinfo
