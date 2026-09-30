@@ -1,14 +1,46 @@
-# ReelShort 海外社媒周报
+# CreatorPulse — Social Media Weekly Intelligence
 
-本项目用于管理 YouTube、Facebook、分销引流和版权保护的每周原始数据，并生成中文管理层周报网页。
+This project is being converted from a local ReelShort weekly-report template into a creator monitoring web app for YouTube, TikTok, Instagram, and Facebook.
 
-## 每周使用
+## Product goals
 
-1. 双击 `新建本周数据文件夹.cmd`，输入本周周一和周日日期。
-2. 把各平台原始导出放入自动创建的目录，不需要预先清洗。
-3. 填写 `04_版权保护\版权保护登记表.xlsx` 和 `05_业务补充\本周补充说明.md`。
-4. 双击 `检查最新周数据.cmd`，查看是否缺少账号或文件。
-5. 数据齐全后，在 Codex 中告诉我：“本周数据已齐，可以生成周报”。
-6. 双击 `打开周报.cmd` 查看本机周报。
+- Creator accounts and onboarding
+- Connect and manage channels across four platforms
+- Track followers/subscribers, views, engagement, watch time, and revenue where supported
+- Track individual posts/videos and identify content gaining traction
+- Compare performance week over week
+- Generate a weekly intelligence report
+- Prepare automated email delivery
+- Keep provider credentials in deployment environment variables
 
-详细提交规则见 `data\周报数据\README.md`。修正文件请使用 `_v2`、`_v3` 等后缀新增，不覆盖原文件。
+## Architecture
+
+The current app uses Next/Vinext, React, Cloudflare tooling, and Drizzle. The next implementation layers are authentication, persistent creator/channel data, platform sync jobs, analytics, report generation, and scheduled email delivery.
+
+Live platform metrics require the creator's own API/OAuth credentials; no credentials belong in GitHub.
+
+## Development
+
+```bash
+npm install
+npm run dev
+npm run build
+```
+
+## Environment placeholders
+
+```text
+DATABASE_URL=
+YOUTUBE_CLIENT_ID=
+YOUTUBE_CLIENT_SECRET=
+TIKTOK_CLIENT_KEY=
+TIKTOK_CLIENT_SECRET=
+META_APP_ID=
+META_APP_SECRET=
+REPORT_EMAIL_FROM=
+REPORT_CRON_SECRET=
+```
+
+## Design direction
+
+Cinematic, premium, dark, data-dense, and fast — a creator command center rather than a spreadsheet.
